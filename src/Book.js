@@ -10,9 +10,9 @@ const Book = function Book(props) {
     <article className="book">
       <img src={image}></img>
       <h2>{title}</h2>
-      <button onClick={getSingleBook}>Display Button</button>
+      <button onClick={getSingleBook}>Click Me</button>
       <h4>{author}</h4>
-      <h2>{numbers+1}</h2>
+      <h2 className="number">{numbers+1}</h2>
     </article>
   );
 };
