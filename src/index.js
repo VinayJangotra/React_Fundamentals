@@ -16,9 +16,9 @@ const BookList = ()=>{
         <EventExamples/>
         {
 
-         books.map((book)=>{
+         books.map((book,index)=>{
             // const{image,title,author,key}=book;
-          return <Book {...book} key={book.id} getBook={getBook}/>
+          return <Book {...book} key={book.id} getBook={getBook} numbers={index}/>
          })
       }
       </section>

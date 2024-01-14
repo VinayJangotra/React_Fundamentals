@@ -1,5 +1,5 @@
 const Book = function Book(props) {
-  const { image, author, title, getBook, id } = props;
+  const { image, author, title, getBook, id ,numbers} = props;
   const displayButton = () => {
     console.log(title);
   };
@@ -12,6 +12,7 @@ const Book = function Book(props) {
       <h2>{title}</h2>
       <button onClick={getSingleBook}>Display Button</button>
       <h4>{author}</h4>
+      <h2>{numbers+1}</h2>
     </article>
   );
 };
