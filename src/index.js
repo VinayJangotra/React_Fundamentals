@@ -3,25 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import {books} from "./books"
 import Book from "./Book"
-// const firstBook = {
-//   author: "Robert Greene",
-//   title: "Mastery",
-//   image: "https://m.media-amazon.com/images/I/61kZgW7wemL._SY425_.jpg",
-// };
-// const secondBook={
-//  author:"Robert Greene",
-//  title:"48 laws of power",
-//  image:"https://m.media-amazon.com/images/I/31RW8HQ31WL._SY445_SX342_.jpg"
-// };
-// const thirdBook = {
-//   author: "Robert Greene",
-//   title: "THE CONCISE ART OF SEDUCTION",
-//   image: "https://m.media-amazon.com/images/I/61+C5NBJCFL._SY425_.jpg",
-// };
+
 const names=['Vinay','Sharma','Manik'];
-// const newNames= names.map((name)=>{
-//    return <h1>{names}</h1>
-// })
+
 const BookList = ()=>{
   const getBook=(id)=>{
     const book= books.find((book)=>book.id === id);
@@ -64,18 +48,6 @@ const EventExamples=()=>{
   </section>
  )
 }
-// function BookList(){
-//  return (
-  
-//    <section className="booklist">
-//      <Book author={firstBook.author} image={firstBook.image} title={firstBook.title} />
-//      <Book author={secondBook.author} image={secondBook.image} title={secondBook.title} />
-//      <Book author={thirdBook.author} image={thirdBook.image} title={thirdBook.title} />
-//    </section>
-//  );
-// }
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<BookList/>)
